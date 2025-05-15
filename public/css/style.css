@@ -1,0 +1,286 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2BDD0; /* Fondo general */
+    color: #0D0D0D; /* Texto principal */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 4;
+    padding: 2rem;
+    background-color: #fff; /* Fondo del contenido principal */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #732C3F; /* Fondo del sidebar */
+    color: #fff;
+    padding: 2rem;
+    border-right: 1px solid #BF7E7E; /* Borde del sidebar */
+}
+
+.sidebar h2 {
+    color: #F2BDD0; /* Título del sidebar */
+    margin-bottom: 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar li a.active {
+    background-color: #BF7E7E; /* Color de la opción activa */
+}
+
+/* Encabezados */
+h1 {
+    color: #732C3F; /* Título principal */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #BF7E7E;
+    padding-bottom: 0.5rem;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #BF7E7E;
+}
+
+th {
+    background-color: #F2BDD0; /* Encabezado de la tabla */
+    font-weight: 500;
+}
+
+/* Botones y Enlaces */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background-color: #732C3F; /* Botones */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #BF7E7E;
+}
+
+.btn-secondary {
+    background-color: #733F2C; /* Botones secundarios */
+}
+
+.btn-secondary:hover {
+    background-color: #BF7E7E;
+}
+
+/* Formularios */
+label {
+    display: block;
+    margin-top: 0.75rem;
+    color: #0D0D0D; /* Etiquetas de los formularios */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #BF7E7E;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Login */
+.login-container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #732C3F; /* Título del login */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #BF7E7E;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #732C3F; /* Botón de login */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-container button:hover {
+    background-color: #BF7E7E;
+}
+
+/* Dashboard */
+.admin-details {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.admin-details h3 {
+    color: #732C3F;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid #BF7E7E;
+    padding-bottom: 0.75rem;
+}
+
+.admin-details p {
+    margin-bottom: 0.75rem;
+}
+
+.dashboard-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.widget {
+    flex: 1 1 calc(50% - 1rem);
+    background-color: #F2BDD0;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    text-align: center; /* Centrar el contenido de los widgets */
+}
+
+.widget h3 {
+    color: #732C3F;
+    margin-bottom: 1rem;
+}
+
+.widget p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #0D0D0D;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #732C3F;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    margin: 0 0.25rem 0 0;
+    font-weight: 700;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.btn:hover {
+    background-color: #BF7E7E;
+}
+
+.btn-secondary {
+    background-color: #733F2C;
+}
+
+.btn-secondary:hover {
+    background-color: #BF7E7E;
+}
+
+.btn-danger {
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sidebar-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    /* Opcional: agregar sombra o borde */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
